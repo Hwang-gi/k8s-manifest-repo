@@ -44,13 +44,6 @@ spec:
                 name: k8s-login-svc
                 port:
                   number: 80
-          - path: /logout.jsp
-            pathType: Prefix
-            backend:
-              service:
-                name: k8s-logout-svc
-                port:
-                  number: 80
           - path: /order.jsp
             pathType: Prefix
             backend:
