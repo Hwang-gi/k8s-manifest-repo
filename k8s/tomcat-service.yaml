@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tommain-svc
-  namespace: k8s-backend
+  name: k8s-prd-tommain-svc
+  namespace: backend
 spec:
   selector:
     app: main-app
@@ -16,8 +16,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomindex-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomindex-svc
+  namespace: backend
 spec:
   selector:
     app: index-app
@@ -31,8 +31,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomsignup-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomsignup-svc
+  namespace: backend
 spec:
   selector:
     app: signup-app
@@ -47,8 +47,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomlogin-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomlogin-svc
+  namespace: backend
 spec:
   selector:
     app: login-app
@@ -62,8 +62,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomorder-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomorder-svc
+  namespace: backend
 spec:
   selector:
     app: order-app
@@ -77,8 +77,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomreservation-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomreservation-svc
+  namespace: backend
 spec:
   selector:
     app: reservation-app
@@ -92,8 +92,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: k8s-trd-tomreservationinfo-svc
-  namespace: k8s-backend
+  name: k8s-prd-tomreservationinfo-svc
+  namespace: backend
 spec:
   selector:
     app: reservationinfo-app
