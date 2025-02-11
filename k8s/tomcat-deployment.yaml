@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tommain
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: main-app
 spec:
@@ -75,7 +75,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomindex
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: index-app
 spec:
@@ -148,7 +148,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomsignup
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: signup-app
 spec:
@@ -222,7 +222,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomlogin
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: login-app
 spec:
@@ -295,7 +295,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomorder
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: order-app
 spec:
@@ -369,7 +369,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomreservation
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: reservation-app
 spec:
@@ -442,7 +442,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-tomreservationinfo
-  namespace: k8s-backend
+  namespace: backend
   labels:
     app: reservationinfo-app
 spec:
