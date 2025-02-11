@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-main-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: main-app
@@ -17,7 +17,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-index-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: index-app
@@ -32,7 +32,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-signup-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: signup-app
@@ -47,7 +47,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-login-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: login-app
@@ -62,7 +62,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-order-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: order-app
@@ -77,7 +77,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-reservation-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: reservation-app
@@ -92,7 +92,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: k8s-reservationinfo-svc
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   selector:
     app: reservationinfo-app
