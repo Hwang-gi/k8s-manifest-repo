@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-main
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: main-app
 spec:
@@ -68,7 +68,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-index
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: index-app
 spec:
@@ -134,7 +134,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-signup
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: signup-app
 spec:
@@ -200,7 +200,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-login
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: login-app
 spec:
@@ -266,7 +266,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-order
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: order-app
 spec:
@@ -332,7 +332,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-reservation
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: order-app
 spec:
@@ -398,7 +398,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-prd-reservationinfo
-  namespace: k8s-frontend
+  namespace: frontend
   labels:
     app: reservationinfo-app
 spec:
