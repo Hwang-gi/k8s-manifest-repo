@@ -2,7 +2,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-main-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -16,7 +16,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-index-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -30,7 +30,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-signup-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -44,7 +44,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-login-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -58,7 +58,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-logout-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -72,7 +72,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-order-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -86,7 +86,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-reservation-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
@@ -100,7 +100,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: k8s-prd-reservationinfo-hpa
-  namespace: k8s-frontend
+  namespace: frontend
 spec:
   maxReplicas: 5
   minReplicas: 2
