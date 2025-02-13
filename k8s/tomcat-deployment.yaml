@@ -38,7 +38,7 @@ spec:
             matchLabels:
               app: main-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-main:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-main:${{ secrets.IMAGE_VERSION }}
           name: k8s-tommain
           ports:
             - containerPort: 8080
@@ -111,7 +111,7 @@ spec:
             matchLabels:
               app: index-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-index:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-index:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomindex
           ports:
             - containerPort: 8080
@@ -184,7 +184,7 @@ spec:
             matchLabels:
               app: signup-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-signup:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-signup:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomsignup
           ports:
             - containerPort: 8080
@@ -258,7 +258,7 @@ spec:
             matchLabels:
               app: login-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-login:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-login:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomlogin
           ports:
             - containerPort: 8080
@@ -331,7 +331,7 @@ spec:
             matchLabels:
               app: order-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-order:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-order:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomorder
           ports:
             - containerPort: 8080
@@ -405,7 +405,7 @@ spec:
             matchLabels:
               app: reservation-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-reservation:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-reservation:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomreservation
           ports:
             - containerPort: 8080
@@ -478,7 +478,7 @@ spec:
             matchLabels:
               app: reservationinfo-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-reservationinfo:latest
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/tomcat-reservationinfo:${{ secrets.IMAGE_VERSION }}
           name: k8s-tomreservationinfo
           ports:
             - containerPort: 8080
