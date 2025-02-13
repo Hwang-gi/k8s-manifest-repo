@@ -14,7 +14,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }} # storageclass.yaml file에서 정의
   csi:
     driver: efs.csi.aws.com # efs-csi-driver 설치
-    volumeHandle: ${{ secrets.FS_ID  }} # file system ID
+    volumeHandle: fs-${{ secrets.FS_ID  }} # file system ID
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -45,7 +45,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }} # storageclass.yaml file에서 정의
   csi:
     driver: efs.csi.aws.com # efs-csi-driver 설치
-    volumeHandle: ${{ secrets.FS_ID  }} # file system ID
+    volumeHandle: fs-${{ secrets.FS_ID  }} # file system ID
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -76,7 +76,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }}
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: ${{ secrets.FS_ID  }}
+    volumeHandle: fs-${{ secrets.FS_ID  }}
 
 ---
 apiVersion: v1
@@ -109,7 +109,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }}
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: ${{ secrets.FS_ID  }}
+    volumeHandle: fs-${{ secrets.FS_ID  }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -139,7 +139,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }}
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: ${{ secrets.FS_ID  }}
+    volumeHandle: fs-${{ secrets.FS_ID  }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -169,7 +169,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }}
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: ${{ secrets.FS_ID  }}
+    volumeHandle: fs-${{ secrets.FS_ID  }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -199,7 +199,7 @@ spec:
   storageClassName: ${{ secrets.SC_NAME }}
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: ${{ secrets.FS_ID  }}
+    volumeHandle: fs-${{ secrets.FS_ID  }}
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
