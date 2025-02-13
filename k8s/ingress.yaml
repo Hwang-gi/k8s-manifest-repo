@@ -9,7 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:${{ secrets.AWS_REGION }}:${{ secrets.ACCOUNT_ID }}:certificate/${{ secrets.ACM_CERTIFICATE_ID }}
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:${{ secrets.AWS_REGION }}:${{ secrets.AWS_ACCOUNT_ID }}:certificate/${{ secrets.ACM_CERTIFICATE_ID }}
   ingressClassName: alb
   rules:
     - host: www.gitchang.store
