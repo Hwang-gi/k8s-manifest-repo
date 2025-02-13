@@ -38,7 +38,7 @@ spec:
             matchLabels:
               app: main-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-main:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-main:${{ secrets.IMAGE_VERSION }}
           name: k8s-main
           ports:
             - containerPort: 80
@@ -104,7 +104,7 @@ spec:
             matchLabels:
               app: index-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-index:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-index:${{ secrets.IMAGE_VERSION }}
           name: k8s-index
           ports:
             - containerPort: 80
@@ -170,7 +170,7 @@ spec:
             matchLabels:
               app: signup-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-signup:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-signup:${{ secrets.IMAGE_VERSION }}
           name: k8s-signup
           ports:
             - containerPort: 80
@@ -236,7 +236,7 @@ spec:
             matchLabels:
               app: login-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-login:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-login:${{ secrets.IMAGE_VERSION }}
           name: k8s-login
           ports:
             - containerPort: 80
@@ -302,7 +302,7 @@ spec:
             matchLabels:
               app: order-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-order:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-order:${{ secrets.IMAGE_VERSION }}
           name: k8s-order
           ports:
             - containerPort: 80
@@ -368,7 +368,7 @@ spec:
             matchLabels:
               app: reservation-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-reservation:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-reservation:${{ secrets.IMAGE_VERSION }}
           name: k8s-reservation
           ports:
             - containerPort: 80
@@ -434,7 +434,7 @@ spec:
             matchLabels:
               app: reservationinfo-app
       containers:
-        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.AWS_ECR }}/nginx-reservationinfo:${{ secrets.IMAGE_VERSION }}
+        - image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.FRONTEND_ECR }}/nginx-reservationinfo:${{ secrets.IMAGE_VERSION }}
           name: k8s-reservationinfo
           ports:
             - containerPort: 80
